@@ -515,3 +515,54 @@ body{
 .button-access span{
     color: #A855F7;
 }
+.grid-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+@media (max-width: 700px) {
+    .grid-box{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+        gap: 16px;
+    }
+}
+
+.mid-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+}
+.mid-header h1{
+    font-size: 16px;
+    font-weight: 700;
+}
+.box-card{
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 12px;
+    background-color: #2F2F2F33;
+    border-radius: 16px;
+    border: solid 1px #33333330;
+    padding: 16px;
+}
+
+.box-card p{
+    font-size: 14px;
+    font-weight: 400;
+    color: #D1D5DB;
+}
+.box-card h4{
+    color: #00D4FF;
+    font-size: 14px;
+    font-weight: 400;
+}
+.box-card h4:hover{
+    text-decoration: underline;
+    color: #00D4FF;
+}
