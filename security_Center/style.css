@@ -2,7 +2,6 @@
 
 *{
     margin: 0;
-    border-style: border-box;
     font-family: Poppins, sans-serif;
     color: white;
 }
@@ -28,7 +27,7 @@
     font-weight: 900;
 }
 
-.section-headerr{
+.section-header{
     gap: 0;
     margin: 0;
     padding: 0%;
@@ -389,4 +388,142 @@
 .button-verified span{
     font-weight: 400;
     color: rgba(74, 222, 128, 1);
+}
+
+/* =====================================================
+   FULL RESPONSIVE FIX — MOBILE → TABLET → DESKTOP
+===================================================== */
+
+/* ---------- Base: Mobile (Default) ----------
+Your current CSS is mobile-first.
+No changes needed here.
+------------------------------------------------ */
+
+
+
+/* ---------- Small Tablets (min-width: 480px) ---------- */
+@media (min-width: 480px) {
+
+    .body {
+        padding: 24px 40px;
+    }
+
+    .status-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sub-section {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+
+
+/* ---------- Tablets (min-width: 600px) ---------- */
+@media (min-width: 600px) {
+
+    .body {
+        padding: 32px 60px;
+    }
+
+    .section {
+        padding: 28px;
+    }
+
+    .section-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sub-section {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 32px;
+    }
+
+    .score-section,
+    .verify-section {
+        width: 50%;
+    }
+
+    .status-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+
+
+/* ---------- Large Tablets / Small Laptops (min-width: 768px) ---------- */
+@media (min-width: 768px) {
+
+    .body {
+        padding: 40px 80px;
+    }
+
+    .security-center {
+        font-size: 36px;
+    }
+
+    .section {
+        padding: 32px;
+    }
+
+    .ai-recommendation {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .name {
+        width: 100%;
+    }
+
+    .status-card .login-details h1 {
+        font-size: 18px;
+    }
+}
+
+
+
+/* ---------- Laptop / Desktop (min-width: 900px) ---------- */
+@media (min-width: 900px) {
+
+    .body {
+        padding: 48px 120px;
+    }
+
+    .sub-section {
+        gap: 40px;
+    }
+
+    .status-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .section {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+
+
+/* ---------- Large Desktop (min-width: 1200px) ---------- */
+@media (min-width: 1200px) {
+
+    .body {
+        padding: 60px 180px;
+    }
+
+    .status-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .sub-section {
+        gap: 48px;
+    }
 }
