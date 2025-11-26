@@ -13,6 +13,7 @@ body{
     box-sizing: border-box;
     column-gap: 24px;
     transition: 10ms;
+    scroll-behavior: smooth;
 }
 .section{
     display: flex;
@@ -443,4 +444,23 @@ body{
     align-items: center;
     column-gap: 16px;
 }
+}
+
+.sub-co-section{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.button-remove{
+    padding: 7px 12px;
+    background-color: #EF444420;
+    border-radius: 8px;
+    /* border: 1px solid rgba(0, 213, 255, 0.3); */
+    border: none;
+    cursor: pointer;
+}
+
+.button-remove span{
+    font-size: 14px;
+    color: #F87171;
 }
